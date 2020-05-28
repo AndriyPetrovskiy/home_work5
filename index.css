@@ -1,0 +1,250 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #424040;
+}       
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1110px;
+    margin: auto;
+}
+
+header {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 460px;
+    justify-content: space-between;
+}
+
+.nav_link a{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.nav_link a:hover {
+    color: #1abc9c;
+}
+
+
+.jambotron {
+    width: 1648px;
+    margin: 30px auto 0;
+    font-size: 0;
+    position: relative;
+}
+
+.dark_overlay {
+    background-color: rgba( 0, 0, 0, .5);
+    width: 1648px;
+    height: 602px;
+    position: absolute;
+}
+
+
+.container_main {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -70%);
+
+}
+
+.main {
+    display: flex;
+    width: 1110px;
+    justify-content: space-between;
+    margin: auto;
+    color: #ffffff;
+}
+
+.main_text {
+    font-size: 58px;
+    font-weight: 900;
+}
+
+.text_discription {
+    font-size: 20px;
+}
+
+
+.btn_slide {
+    background-color: #1abc9c;
+    padding: 30px 40px;
+    border: none;
+    color: #fff;
+    font-size: large;
+    transition: 0.2s;
+}
+
+.btn_slide:hover{
+    opacity: 0.7;
+}
+
+.new_colection {
+    background-color: #e9f0fd;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+
+.colection {
+    padding-top: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.colection::after {
+    content: '';
+    display: block;
+    width: 165px;
+    height: 5px;
+    background-color: #1abc9c;
+    margin: 30px auto; 
+}
+
+.colection_list {
+    list-style: none;
+    font-size: 0;
+    margin-top: 80px;
+}
+
+.colection_card {
+    display: inline-block;
+    margin-right: 30px;
+    background-color: #323232;
+}
+
+.colection_card:last-child {
+    margin-right: 0;
+    position: relative;
+}
+
+/* ========overlay ========== */
+
+.colection_overlay {
+    opacity: 0;
+    transition: 0.3s;
+    position: absolute;
+    border: 10px solid rgba(255, 255, 255, 0.8);
+    width: 235px;
+    height: 303px;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.colection_overlay:hover {
+    opacity: 1;
+}
+
+/* .col_btn {
+    display: inline-block;
+} */
+
+
+.hart {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    border: 1px solid #fff;
+    height: 30px;
+    width: 30px;
+    padding: 10px;;
+}
+
+.arrow {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    border: 1px solid #fff;
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+}
+
+.watch {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    border: 1px solid #fff;
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+}
+
+.add_card {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    top: 80%;
+    left:50%;
+    transform: translate(-50%, -70%);
+    background-color: #323232;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.cart {
+    margin-right: 20px;
+}
+
+/* ========overlay end========== */
+
+
+
+.description {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #323232;
+    height: 40px;
+    margin-top: 0;
+    padding-top: 0;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.name {
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+.price {
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 15px;
+}
+
+
+.colection_card:hover .description  {
+    background-color: #1abc9c;
+    cursor: pointer;
+}
