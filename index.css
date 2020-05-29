@@ -24,6 +24,10 @@ header {
     align-items: center;
 }
 
+.logo{
+    font-size: 0;
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -101,7 +105,6 @@ nav ul {
 
 .new_colection {
     background-color: #e9f0fd;
-    margin-bottom: 100px;
     padding-bottom: 100px;
 }
 
@@ -155,11 +158,6 @@ nav ul {
     opacity: 1;
 }
 
-/* .col_btn {
-    display: inline-block;
-} */
-
-
 .hart {
     position: absolute;
     top: 40%;
@@ -168,6 +166,12 @@ nav ul {
     height: 30px;
     width: 30px;
     padding: 10px;;
+}
+
+.hart:hover{
+    background-color: #1abc9c;
+    cursor: pointer;
+    border: none;
 }
 
 .arrow {
@@ -181,6 +185,12 @@ nav ul {
     padding: 10px;
 }
 
+.arrow:hover{
+    background-color: #1abc9c;
+    cursor: pointer;
+    border: none;
+}
+
 .watch {
     position: absolute;
     top: 40%;
@@ -191,7 +201,13 @@ nav ul {
     padding: 10px;
 }
 
-.add_card {
+.watch:hover{
+    background-color: #1abc9c;
+    cursor: pointer;
+    border: none;
+}
+
+.add_cart {
     display: flex;
     align-items: center;
     margin: auto;
@@ -206,6 +222,12 @@ nav ul {
     font-size: 14;
     color: #fff;
     border: 1px solid #fff;
+}
+
+.add_cart:hover{
+    background-color: #1abc9c;
+    cursor: pointer;
+    border: none;
 }
 
 .cart {
@@ -247,4 +269,26 @@ nav ul {
 .colection_card:hover .description  {
     background-color: #1abc9c;
     cursor: pointer;
+}
+
+/* ============  footer  ============= */
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 88px;
+    width: 100%;
+    background-color: #323232;
+    font-size: 0;
+}
+
+.footer_text {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.last_element {
+    color: #1abc9c;
 }
